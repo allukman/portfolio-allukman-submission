@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header.navbar-container {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-block: 1rem;
+  z-index: 999;
+}
+
+header.navbar-container .logo img {
+  width: 200px;
+}
+
+header.navbar-container .nav-list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li {
+  list-style-type: none;
+}
+
+header.navbar-container .nav-list li a {
+  text-decoration: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: black;
+  padding: 0.5rem 1.5rem;
+  border-radius: 999px;
+  transition: all 0.3s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a {
+  background-color: #116466;
+  color: white;
+}
+
+main {
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+  padding: 2rem 4rem;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+main .content .content-home {
+  flex: 1;
+  display: flex;
+  margin-left: 20px;
+  align-items: center;
+}
+
+main .content .content-home .content-description {
+  flex: 1 1;
+}
+
+main .content .content-home .content-description .title {
+  font-size: 3.5rem;
+  margin-block: 1rem;
+}
+
+main .content .content-home .content-description .subtitle {
+  font-size: 1.5rem;
+  color: #116466;
+}
+
+main .content .content-home .content-description p {
+  font-size: 1rem;
+}
+
+main .content .content-home .content-description button {
+  padding: 0.8rem 2.5rem;
+  margin-block-start: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  color: white;
+
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background-color: #116466;
+  cursor: pointer;
+  transition: all 0.15s ease-in;
+}
+
+main .content .content-home .content-description button:hover {
+  border: 3px solid #116466;
+  color: #116466;
+  background-color: transparent;
+}
+
+main aside {
+  position: fixed;
+  inset-block: 0;
+  inset-inline-start: 0;
+}
+
+main aside .social-media {
+  height: 100%;
+  display: flex;
+}
+
+main aside .social-media ul {
+  padding: 1.5rem 1rem;
+  margin: auto;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  background-color: #116466;
+
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  transition: all 0.7s ease-in-out;
+}
+
+main aside .social-media ul:hover {
+  background-color: #0c4546;
+}
+
+main aside .social-media li {
+  list-style-type: none;
+}
+
+main aside .social-media li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  transition: all 0.25s ease-in-out;
+}
+
+main aside .social-media li a:hover {
+  color: #000000;
+}
+
+main .content .content-home .home_blob {
+  width: 300px;
+  min-width: 250px;
+  fill: #116466;
+  transition: fill 0.7s ease-in-out;
+}
+
+main .content .content-home .home_blob:hover {
+  fill: #0c4546;
+}
+
+main .content .content-home .home_blob-img {
+  width: 170px;
+}
+
+footer {
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  background-color: #116466;
+}
+
+footer .footer-repo {
+  color: white;
+  text-decoration: none;
+}
+
+footer .footer-repo:hover {
+  color: #e25555;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+  header.navbar-container {
+    flex-direction: column;
+  }
+
+  header.navbar-container .nav-list ul {
+    flex-wrap: wrap;
+    column-gap: 0.5rem;
+  }
+
+  main {
+    padding: 1rem 3rem;
+  }
+
+  main .content .content-home {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  main .content .content-home .content-description .title {
+    font-size: 3rem;
+  }
+
+  main .content .content-home .content-description p {
+    font-size: 1rem;
+  }
+
+  .home_img {
+    order: -1;
+    justify-self: center;
+  }
+}
