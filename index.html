@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="assets/css/app.css" />
     <link
       rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
       crossorigin="anonymous"
@@ -21,9 +25,9 @@
       </div>
       <nav class="nav-list">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about_me">About</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#">Portofolio</a></li>
         </ul>
       </nav>
@@ -72,21 +76,106 @@
             </svg>
           </div>
         </article>
-        <article>
-            
+
+        <article id="about_me" class="content-about">
+          <div>
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+              <span class="home__scroll-name">Scroll down</span>
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
+          <h1 id="about" class="content-title">About me</h1>
+          <p>
+            Mobile developer who has an interest in programming, especially
+            Mobile. have high curiosity, can think critically and dare to accept
+            challenges.
+          </p>
+          <div class="about_info">
+            <div>
+              <span class="about_info-title">08+</span>
+              <span class="about_info-name"
+                >Years <br />
+                Experience
+              </span>
+            </div>
+            <div>
+              <span class="about_info-title">20+</span>
+              <span class="about_info-name"
+                >Completed <br />
+                Project
+              </span>
+            </div>
+            <div>
+              <span class="about_info-title">05+</span>
+              <span class="about_info-name"
+                >Companies <br />
+                Worked
+              </span>
+            </div>
+          </div>
         </article>
+
+        <article id="skills" class="content-skills">
+          <div>
+            <h1 class="content-title">My Skills</h1>
+            <div class="skill-info">
+              <img src="assets/img/kotlin.png" alt="kotlin-logo" />
+              <img src="assets/img/js.png" alt="javascript-logo" />
+              <img src="assets/img/dart.png" alt="dart-logo" />
+            </div>
+          </div>
+        </article>
+
+        <article id="project" class="content-projects">
+          <div>
+            <h1 class="content-title">My Project</h1>
+            <div class="projects-info">
+              <div class="project-card">
+                <img src="assets/img/portfolio1.jpg" alt="Project 1" />
+                <h2>Project 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+              <div class="project-card">
+                <img src="assets/img/portfolio1.jpg" alt="Project 2" />
+                <h2>Project 2</h2>
+                <p>
+                  Sed do eiusmod tempor incididunt ut labore et dolore magna
+                  aliqua.
+                </p>
+              </div>
+              <div class="project-card">
+                <img src="assets/img/portfolio1.jpg" alt="Project 3" />
+                <h2>Project 3</h2>
+                <p>
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+
       </div>
       <aside>
         <div class="social-media">
           <ul>
             <li>
-              <a href="https://www.linkedin.com/in/allukman/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.linkedin.com/in/allukman/" target="_blank"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
             </li>
             <li>
-              <a href="https://www.instagram.com/allukman__/" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.instagram.com/allukman__/" target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
             </li>
             <li>
-              <a href="https://www.facebook.com/kambingtekaje.me" target="_blank"><i class="fab fa-facebook"></i></a>
+              <a
+                href="https://www.facebook.com/kambingtekaje.me"
+                target="_blank"
+                ><i class="fab fa-facebook"></i
+              ></a>
             </li>
           </ul>
         </div>
